@@ -18,6 +18,9 @@ a{
   color: #59577f;
   text-transform:capitalize;
 }
+a:hover{
+  transform: translateY(-2px);
+}
 //header starts
 header{
   display: flex;
@@ -35,7 +38,6 @@ header{
      padding: 12px 65px;
      font-size: 15px;
      background-color: #ffffff;
-     height: max-content;
    }
 //header ends
 
@@ -95,6 +97,7 @@ main{
   color: #ffffff;
   text-transform: capitalize;
   box-shadow: 0 0 5px #fe52c0;
+  border-radius: 5px;
 }
 .main-content{
   display: flex;
@@ -145,6 +148,7 @@ footer{
  padding: 0 50px 200px;
   margin-top: 260px;
   background-color: #00252e;
+  font-family: 'Open Sans', sans-serif;
 }
 .footer-logo, .social{
   padding-left: 55px;
@@ -207,3 +211,181 @@ width: 450px;
     padding: 14px 42px;
   }
 }
+
+// mediaquery starts
+@media  (max-width: 900px){
+//header starts
+  header{
+    padding: 25px 15px 0 15px;
+    .logo{
+      padding:0;
+      img{
+        width: 120px;
+      }
+    }
+    .btn{
+    margin:0;
+    padding: 5px 25px;
+    font-size: 10px;
+    }
+  }
+//header ends
+
+  .background{
+    top: -140px;
+    right:-350px;
+    height: 510px;
+    width: 500px;
+    border-radius: 60px;
+    transform: rotate(-32deg);
+  }
+//main starts
+//bilboard section starts
+  .billboard{
+    margin: 80px 30px; 
+    figure{
+      padding: 2px 6px;
+    }
+  }
+  .billboard-discription{
+    margin: 28px 0 0 0;
+    h2{
+      font-size: 25px;
+    }
+    p{
+      font-size: 15px;
+      padding: 0 4px;;
+      margin: 12px 0 30px 0;
+    }
+  }
+  .pink-btn{
+    font-size:12px;
+    padding: 12px 40px;
+    border-radius: 2px;
+  }
+  .billboard-bg{
+    top:120px;
+    left: -15px;
+    height:445px;
+    width:445px;
+    border-radius: 20px;
+  }
+  //main-content section starts
+  .main-content{
+    flex-wrap: wrap;
+    margin-top: 235px;
+    margin-bottom: 70px;
+    figure{
+      width:auto;
+      padding:0px 6px;
+    }
+    .detials{
+      text-align:center;
+      width: auto;
+      margin-top: 115px;
+      margin-left:0;
+      h2{
+        margin-bottom: 15px;
+        font-size: 19px;
+      }
+      p{
+        font-size: 13px;
+      }
+      .discription{
+        margin-bottom: 36px;
+      }
+    }
+  }
+  //Trial section starts
+  .trial-section{
+    width:320px;;
+    padding: 34px 0 30px 0;
+    h2{
+    font-size: 14px
+    }
+    p{
+      font-size: 10px;
+      margin: 7px 0 15px;
+    }
+    a{
+      padding: 8px 40px;
+      font-size: 10px;
+    }
+  }
+  //footer starts
+  footer{
+    margin-top: 100px;
+    padding: 0 20px 20px;
+  }
+  .footer-logo{
+    padding-top: 74px;
+    padding-left: 82px;
+    width: 170px;
+  }
+  .footer-content{
+    flex-wrap:wrap;
+    margin-top: 35px;
+    margin-left: 5px;
+  }
+  .social{
+    order: 1;
+    padding: 0;
+    text-align: center;
+    width:100%;
+    p{
+      font-size: 12px;
+    }
+  }
+  .social-icon{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    width: auto;
+    margin-top:98px;
+    margin-bottom: 20px;
+  }
+  .quick-links{
+    height: 260px;
+    margin: 40px 0 52px 5px;
+    li{
+      width: 55%;
+      font-size: 18px;
+    }
+    li:nth-of-type(1){
+      order:1;
+    }
+    li:nth-of-type(2){
+      order:4;
+    }
+    li:nth-of-type(3){
+      order:2;
+    }
+    li:nth-of-type(4){
+      order:5;
+    }
+    li:nth-of-type(5){
+      order:3;
+    }
+    li:nth-of-type(6){
+      order:6;
+    }
+  }
+  .newsletter{
+    text-align:center;
+    h4{
+      font-size: 20px;
+      font-weight: 600;
+    }
+    p{
+      line-height: 1.5;
+    }
+    input{
+      border-radius: 0;
+    }
+    a{
+      width: auto;
+      margin-top: 17px;
+      padding: 16px 24px;
+    }
+  }
+} 
