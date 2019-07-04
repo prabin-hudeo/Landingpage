@@ -72,6 +72,7 @@ main{
      text-transform: capitalize;
    }
    p{
+    font-family: 'Open Sans', sans-serif;
      font-size: 22px;
      line-height: 1.5;
      padding: 0 30px;
@@ -111,15 +112,18 @@ main{
   .detials{
     width: 515px;
     margin-left: 115px;
-    h2{
-      text-transform: capitalize;
-      letter-spacing: 0.4px;
-      margin-bottom: 12px;
-    }
+  }
     .discription{
       margin-bottom: 45px;
+      h2{
+        text-transform: capitalize;
+        letter-spacing: 0.4px;
+        margin-bottom: 12px;
+      }
+      p{
+        font-family: 'Open Sans', sans-serif;
+      }
     }
-  }
 }
 .trial-section{
   width:800px;
@@ -148,7 +152,6 @@ footer{
  padding: 0 50px 200px;
   margin-top: 260px;
   background-color: #00252e;
-  font-family: 'Open Sans', sans-serif;
 }
 .footer-logo, .social{
   padding-left: 55px;
@@ -178,6 +181,9 @@ margin-top: 32px;
   a{
     margin-right: 22px
   }
+}
+.quick-links, .newsletter{
+font-family: 'Open Sans', sans-serif;
 }
 .quick-links{
 flex-wrap: wrap;
