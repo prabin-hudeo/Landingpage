@@ -154,18 +154,19 @@ footer {
   background-color: #00252e;
 }
 
-.footer-logo {
-  padding-left: 12px;
-  padding-top: 70px;
-  width: 340px;
+.footer-logo, .social {
+  padding-left: 55px;
 }
 
-.footer-content > div:last-child {
-  margin-right: 0;
+.footer-logo {
+  padding-left: 55px;
+  padding-top: 84px;
+  width: 240px;
 }
 
 .footer-content {
-  justify-content: space-around;
+  margin-top: 32px;
+  justify-content: space-between;
 }
 
 .social-icon, .footer-content, .quick-links {
@@ -173,7 +174,6 @@ footer {
 }
 
 .social {
-  padding: 13px 0 0 55px;
   width: 400px;
 }
 .social p {
@@ -185,12 +185,8 @@ footer {
   font-size: 35px;
   margin-bottom: 28px;
 }
-.social-icon li {
+.social-icon a {
   margin-right: 22px;
-}
-
-.quick-links, .newsletter {
-  margin-top: 12px;
 }
 
 .quick-links {
